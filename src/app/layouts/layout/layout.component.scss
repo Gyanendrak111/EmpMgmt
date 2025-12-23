@@ -1,0 +1,31 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  background: #f5f6fa;
+  padding: 1rem;
+  overflow: auto;
+}

@@ -1,0 +1,33 @@
+<p>admin-layout works!</p>
+<!-- <app-header />
+<div class="admin-wrapper">
+  <app-sidebar />
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>
+<app-footer /> -->
+
+
+<!-- <app-header />
+<div class="admin-wrapper">
+  <app-sidebar />
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>
+<app-footer /> -->
+
+<app-header (toggleSidebar)="toggleSidebar()" />
+
+<div class="admin-wrapper">
+  <!-- <app-sidebar [collapsed]="isSidebarCollapsed()" /> -->
+  
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>
+
+<app-footer />
+
+

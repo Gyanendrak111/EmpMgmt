@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* ✅ removes browser scrollbar */
+}
+
+.app-container {
+  display: flex;
+}
+
+.main-content {
+ // margin-left: 260px;
+  width: 100%;
+}
+
+.sidebar-collapsed .sidebar {
+  width: 80px;
+}
+
+.sidebar-collapsed .main-content {
+  margin-left: 80px;
+}

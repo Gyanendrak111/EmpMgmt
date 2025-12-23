@@ -1,0 +1,56 @@
+ 
+  <!-- <aside class="sidebar">
+  <div class="logo">Valex</div>
+
+  <nav>
+    <a class="active">Dashboard</a>
+    <a>Icons</a>
+    <a>Charts</a>
+    <a>Apps</a>
+    <a>Forms</a>
+    <a>Tables</a>
+  </nav>
+</aside>   -->
+<aside class="sidebar" [class.collapsed]="collapsed">
+  <div class="sidebar-header">
+    <button class="hamburger" (click)="toggle()">
+      ☰
+    </button>
+
+    <span class="logo" *ngIf="!collapsed">Test</span>
+  </div>
+
+  <ul class="menu">
+    <li class="active">
+      <i class="icon">🏠</i>
+      <span *ngIf="!collapsed">Dashboard</span>
+    </li>
+
+    <li>
+      <i class="icon">⭐</i>
+      <span *ngIf="!collapsed">Icons</span>
+    </li>
+
+    <li>
+      <i class="icon">📊</i>
+      <span *ngIf="!collapsed">Charts</span>
+    </li>
+
+    <li>
+      <i class="icon">📦</i>
+      <span *ngIf="!collapsed">Apps</span>
+    </li>
+
+    <li>
+      <i class="icon">📝</i>
+      <span *ngIf="!collapsed">Forms</span>
+    </li>
+
+    <li>
+      <i class="icon">📋</i>
+      <span *ngIf="!collapsed">Tables</span>
+    </li>
+  </ul>
+</aside>
+
+ 
